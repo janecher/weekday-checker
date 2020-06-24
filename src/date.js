@@ -1,11 +1,4 @@
-class Date {
-  constructor(day, month, year) {
-    this.day = day;
-    this.month = month;
-    this.year = year;
-  }
-
-  calculateWeekday() {
-    
-  }
+export function calculateWeekday(date) {
+  const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return weekday[date.getDay()];
 }
