@@ -1,5 +1,3 @@
-//const arrayMonth30 = [4, 6, 9, 11]//April, June, September, November
-
 export function isLeapYear(year) {
   if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
     return true;
@@ -25,10 +23,18 @@ export function checkDay(day, month, year, answer) {
   return true;
 }
 
-/*function checkYear(year) {
-  if(year > 0) {
+export function checkMonth(month) {
+  if (month < 1 || month > 12) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+export function checkYear(year) {
+  if (year > 0) {
     return true;
   } else {
     return false;
   }
-}*/
+}
