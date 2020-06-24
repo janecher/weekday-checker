@@ -7,18 +7,22 @@
 </head>
 <body>
   <div class="container">
-    <h2>Date Calculator</h2>
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Date Calculator</h1>
+    </div>
     <form id="dateCalulation">
       <div class="form-group">
         <label for="day">Day</label> 
-        <input id="day" class="form-group" type="number" required>
+        <input id="day" class="form-control" type="number" required>
         <label for="month">Month</label> 
-        <input id="month" class="form-group" type="number" required>
+        <input id="month" class="form-control" type="number" required>
         <label for="year">Year</label> 
-        <input id="year" class="form-group" type="number" required>
+        <input id="year" class="form-control" type="number" required>
       </div>
       <button type="submit" class="btn">Let's See the Date!</button>
     </form>
+    <div class="incorrect-input">
+    </div>
     <div class="answer">
     </div>
   </div>  
