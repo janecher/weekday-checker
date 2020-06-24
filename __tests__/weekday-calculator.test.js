@@ -1,4 +1,5 @@
 import { isLeapYear, checkDay, checkMonth, checkYear } from './../src/input-checker.js';
+import { calculateWeekday } from './../src/date.js';
 
 describe('check the input date', () => {
 
@@ -35,5 +36,16 @@ describe('check the input date', () => {
   test('checking if year input is correct, a positive number', () => {
     expect(checkYear(-8)).toEqual(false);
     expect(checkYear(2020)).toEqual(true);
+  });
+});
+
+describe('calculate the day of the week', () => {
+  test('get the name of the date', () => {
+    const date1 = new Date(2010, 2, 10);
+    const date2 = new Date(2020, 5, 23);
+    const date3 = new Date(2020, 6, 4);
+    expect(calculateWeekday(date1)).toEqual("Wednesday");
+    expect(calculateWeekday(date2)).toEqual("Tuesday");
+    expect(calculateWeekday(date3)).toEqual("Saturday");
   });
 });
