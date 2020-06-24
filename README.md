@@ -11,7 +11,7 @@ Webpage to calculate the day of the week based on user input date.
 ## Setup/Installation Requirements
 
 * Clone/download the repository
-* Do "npm install" and then "npm run build" in your terminal
+* Do "npm install", then "npm run build", then "npm run start" in your terminal
 * See result in your browser
 
 ## Specification
